@@ -1,0 +1,19 @@
+[package]
+name = "warpnet-desktop"
+version = "0.1.0"
+description = "A Tauri App"
+authors = ["Vadim Filin, github.com.mecdy@passmail.net"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+http = "1"
+mime_guess = "2"
+warpnet_frontend_dist = { git = "https://github.com/Warp-net/warpnet-frontend", branch = "main" }
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
