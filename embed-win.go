@@ -37,6 +37,6 @@ import (
 //go:embed bin/warpnet-desktop-windows
 var desktopBinary []byte
 
-func GetDesktopEmbedded() []byte {
-	return desktopBinary
+func LoadDesktopEmbedded() string {
+	return bin.BinaryPath
 }
