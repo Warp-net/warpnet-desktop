@@ -1,3 +1,6 @@
+//go:build tools
+// +build tools
+
 package bin
 
-import ()
+import _ "embed"
