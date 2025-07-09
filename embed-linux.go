@@ -30,7 +30,6 @@ package embedded
 import (
 	_ "embed"
 	_ "github.com/Warp-net/warpnet-desktop/bin"
-	"github.com/warpnet/warpnet-desktop/bin"
 )
 
 // This file embeds the whole desktop to a single Golang binary file. DO NOT REMOVE.
@@ -38,6 +37,6 @@ import (
 //go:embed bin/warpnet-desktop-linux
 var desktopBinary []byte
 
-func LoadDesktopEmbedded() string {
-	return bin.BinaryPath
+func LoadDesktopEmbedded() []byte {
+	return desktopBinary
 }
