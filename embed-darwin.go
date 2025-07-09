@@ -33,7 +33,7 @@ import (
 
 // This file embeds the whole desktop to a single Golang binary file. DO NOT REMOVE.
 //
-//go:embed bin/warpnet-desktop
+//go:embed bin/warpnet-desktop-darwin
 var desktopBinary []byte
 
 func GetDesktopEmbedded() []byte {
