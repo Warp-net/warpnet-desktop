@@ -29,7 +29,7 @@ package embedded
 
 import (
 	_ "embed"
-	_ "github.com/warpnet/warpnet-desktop/bin"
+	_ "github.com/Warp-net/warpnet-desktop/bin"
 )
 
 // This file embeds the whole desktop to a single Golang binary file. DO NOT REMOVE.
