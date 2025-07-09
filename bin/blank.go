@@ -1,6 +1,7 @@
-//go:build tools
-// +build tools
-
 package bin
 
 import _ "embed"
+
+func init() {
+	println("embedded!")
+}
